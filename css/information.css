@@ -51,8 +51,7 @@ header nav.navbar ul li.active:hover a{
 }
 /*=================================== IMAGE PRINCIPAL ===================================*/
 body {
-    background-image: url('../img/back.png');
-    background-repeat: no-repeat;
+    background-color: #ffffff;
 }
 /*=================================== Footer ===================================*/
 footer {
