@@ -68,3 +68,18 @@ footer {
     bottom: 0px;
     z-index: 1;
 }
+/*=================================== PRESENTATION ===================================*/
+div.presentation h1{
+    padding-top: 90px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #ffaf2e;
+    font-family:'Bebas Neue', cursive;
+    font-size: 50px;
+}
+div.presentation p{
+    padding-top: 0px;
+    color: #242323;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+}
