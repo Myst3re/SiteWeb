@@ -1,21 +1,64 @@
+/*================================================================================*/
 /*=================================== Default ===================================*/
-li {
-    text-decoration: none;
-    list-style-type: none;
-}
-a {
-    text-decoration: none;
-}
-ul {
+/*================================================================================*/
+
+*, ::before, ::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/*=================================== BASIC ===================================*/
+
+a {
+    text-decoration: none;
+    list-style-type: none; 
 }
 p {
     text-align: center;
     font-family: monospace;
     font-size: 12px;
 }
+
+/*=================================== TITRE ===================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color:#ffaf2e;
+}
+
+/*=================================== LISTE ===================================*/
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    text-decoration: none;
+    list-style-type: none;
+    color: #2572f7;
+}
+
+/*=================================== TABLEAU ===================================*/
+
+table {   
+}
+tr {    
+}
+th {
+    font-size: 15px;
+}
+td {
+    font-size: 12px;
+}
+
+/*================================================================================*/
 /*=================================== NAV BAR ===================================*/
+/*================================================================================*/
 header nav.navbar {
     overflow: hidden;
     background-color: #292929;
@@ -49,22 +92,99 @@ header nav.navbar ul li.active a{
 header nav.navbar ul li.active:hover a{
     color: #2572f7;
 }
-/*=================================== IMAGE PRINCIPAL ===================================*/
-body {
-    background-color: #ffffff;
+/*================================================================================*/
+/*==================================== HEADER ====================================*/
+/*================================================================================*/
+header {   
 }
-/*=================================== Footer ===================================*/
+/*================================================================================*/
+/*===================================== BODY =====================================*/
+/*================================================================================*/
+body {
+/*    background-image: url('../img/background.jpg');*/
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*================================================================================*/
+/*==================================== FOOTER ====================================*/
+/*================================================================================*/
 footer {
-    color: white;
-    text-decoration: none;
-    background-color: #292929;
-    position: fixed;
+    flex-shrink: 0;
     width: 100%;
+    background: #292929;
+    color: #ffffff;
+    border-top: solid;
+    border-top-width: 6px;
+}
+footer a {
+    color: white;
+}
+/*================================================================================*/
+/*===================================== DIV =====================================*/
+/*================================================================================*/
+div {    
+}
+div.navdiv {
+    background-color: #292929;
+    display: flex;
+    flex-basis: 100%;
+    padding: 2em;
+}
+div.principal {
+    flex: 1 0 auto;
+    padding-top: 70px;
     text-align: center;
-    font-size: 15px;
-    font-family: monospace;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 1;
+}
+div.principal p {
+    padding: 5vw 10vw;
+    text-align: justify;
+}
+div.principal_footer{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    padding: 15px 0px 10px;
+}
+div.bloc {
+    flex-basis: 20%;
+    margin: 0 15px;
+    border-top: solid;
+}
+div.footer_page,
+div.footer_contact,
+div.footer_social{
+    background-color: transparent;
+}
+div.footer_page ul.footer_text,
+div.footer_contact ul.footer_text,
+div.footer_social ul.footer_text{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.footer_page h1,
+div.footer_contact h1,
+div.footer_social h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 19px;
+    padding-top: 8px;
+}
+div.footer_page ul.footer_text li,
+div.footer_social ul.footer_text li,
+div.footer_contact ul.footer_text li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+div.footer_page ul.footer_text li:hover a,
+div.footer_social ul.footer_text li:hover a,
+div.footer_contact ul.footer_text li:hover a{
+    color: #2572f7;
+    transition: 0.3s;
 }
