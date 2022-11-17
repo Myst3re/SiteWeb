@@ -130,7 +130,7 @@ div {
 }
 div.principal {
     flex: 1 0 auto;
-    padding-top: 70px;
+    padding-top: 100px;
     text-align: center;
 }
 div.principal p {
