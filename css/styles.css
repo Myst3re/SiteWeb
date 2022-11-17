@@ -127,12 +127,6 @@ footer a {
 /*================================================================================*/
 div {    
 }
-div.navdiv {
-    background-color: #292929;
-    display: flex;
-    flex-basis: 100%;
-    padding: 2em;
-}
 div.principal {
     flex: 1 0 auto;
     padding-top: 70px;
@@ -187,4 +181,18 @@ div.footer_social ul.footer_text li:hover a,
 div.footer_contact ul.footer_text li:hover a{
     color: #2572f7;
     transition: 0.3s;
+}
+
+/*================================================================================*/
+/*===================================== CHANGE COLOR SYSTEME =====================================*/
+/*================================================================================*/
+@media (prefers-color-scheme: dark){
+    body {
+        background-color: #292929;
+    }
+}
+@media (prefers-color-scheme: light){
+    body {
+        background-color: #fff;
+    }
 }
